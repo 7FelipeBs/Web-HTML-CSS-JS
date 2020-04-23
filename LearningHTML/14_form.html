@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <Head>
+        <title>Base</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Felipe Bs">
+        <meta name="Description" content="List of documentation">
+        <meta name="keywords" content="html5, technology">
+        
+        <style>
+            .formLogin{
+                width: 250px;
+                margin: 50px auto 0;
+                font-family: sans-serif;                  
+            }
+
+            .formLogin label{
+                margin-top: 20px;
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            .formLogin fieldset{
+                background-color: gray;
+            }
+            .formLogin legend{
+                background-color: yellow;
+            }
+            #user, #pass, .btn{
+
+                display: block;
+                width: 100%;
+                padding: 5px;
+                box-sizing: border-box;
+                font-size: 18px;
+            }
+            .btn{
+                margin-top: 15px;
+                border: none;
+            }
+            #user:focus, #pass:focus{
+                background-color: red;
+            }
+            #user{
+                margin-bottom: 15px;
+            }
+        </style>
+    </Head>
+    <body>
+        <h1>Form</h1>
+        <form action="#" method="POST" class="formLogin">
+            <fieldset>
+                <legend>Login</legend>
+
+                <label for="user">User: </label>
+                <input type="text" name="text" id="user" autofocus>
+                <label for="pass">Password: </label>
+                <input type="password" name="pass" id="pass">
+
+                <input type="submit" value="Login" class="btn">
+            </fieldset>
+        </form>
+    </body>
+</html>
