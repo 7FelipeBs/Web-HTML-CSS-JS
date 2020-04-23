@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <Head>
+        <title>Base</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Felipe Bs">
+        <meta name="Description" content="List of documentation">
+        <meta name="keywords" content="html5, technology">
+
+        <style>
+            .Effect{
+                background-color: orange;
+                width: 100px;
+                height: 100px;
+                transition-property: width, height;
+                transition-duration: 1s;
+                transition-timing-function: cubic-bezier(.59,.01,.15,.82);
+                transition-delay: 0s, .3s;
+            }
+
+            .Effect:hover{
+                width: 200px;
+                height: 200px;
+            }
+        </style>
+    </Head>
+    <body>
+        <h1>Titulo</h1>
+        <div class="Effect"></div>
+    </body>
+</html>
