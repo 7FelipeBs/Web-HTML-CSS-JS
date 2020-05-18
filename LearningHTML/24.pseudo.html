@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <Head>
+        <title>Base</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Felipe Bs">
+        <meta name="Description" content="List of documentation">
+        <meta name="keywords" content="html5, technology">
+    
+        <style>
+            input[type="checkbox"]{
+                width: 20px;
+                height: 20px;
+                transition-duration: .5s;
+            }
+            input[type="checkbox"]:checked{
+                width: 40px;
+                height: 40px;
+            }
+
+            button:disabled{
+                background: blue;
+            }
+
+            p{
+                color: red;
+            }
+
+            p:empty:before{
+                content: "paragrafo vazio";
+            }
+
+            input[type="text"]:focus{
+                background: #ccc;
+            }
+
+            a:focus, a:hover{
+                background: red;
+            }
+        </style>
+    </Head>
+    <body>
+        <label for=""><input type="checkbox" value="sim"> Aceito o contrato</label>
+
+        <button>vai</button>
+        <button disabled>volta</button>
+
+        <p>paragrafo 1</p>
+        <p> </p>
+        <p></p>
+        <hr>
+
+        <input type="text">
+
+        <ul>
+            <li><a href="#">Link falso</a></li>
+            <li><a href="#">Link falso</a></li>
+            <li><a href="#">Link falso</a></li>
+        </ul>
+
+        <div tabindex="1">div 1</div>
+        <div tabindex="2">div 2</div>
+        <div tabindex="3">div 3</div>
+
+        <hr>
+
+        <input type="text" value="valor inicial">
+        <input type="text" value="valor inicial" readonly>
+        <input type="text" value="valor inicial" disabled>
+        <input type="text" placeholder="valor inicial do placeholder">
+    </body>
+</html>
